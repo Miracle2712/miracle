@@ -5,19 +5,56 @@
     <title>Title</title>
 </head>
 <body>
-    <script>
-     let S;
-     let r;
 
-     r = prompt('Bán kính đường tròn (cm) ')
+<tr>
+    <td>
+        <table>
+            <tr>
+                <td><b>Amount</b></td>
+                <td></td>
 
-     S=(r*r)*3.14
-     document.write("Diện tích hình tròn: " + S + "" + 'cm');
+                <td><b>From Currency</b></td>
+                <td></td>
+
+                <td><b>To Currency</b></td>
+
+            </tr>
+            <tr>
+                <td><input style="width: 200px" type="text" id="giatri"></td>
+                <td></td>
+                <td><select onchange="chuyendoi()" style="width: 150px" name="" id="country">
+                    <option value="vnd">VIETNAM</option>
+                    <option value="usd">USA</option>
+
+                </select>
+                </td>
+                <td></td>
+                <td>
+                    <select onchange="chuyendoi()" style="width: 150px" name="" id="tien">
+                        <option value="vnd">dong</option>
+                        <option value="usd">USD</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </td>
+</tr>
+<h1 id="rs"></h1>
+<script>
+    function chuyendoi() {
+        let giatri = document.getElementById("giatri").value;
+        let country = document.getElementById("country").value;
+        let tien = document.getElementById("tien").value;
+        if (country == tien) {
+            document.getElementById("rs").innerHTML = (giatri);
+        }
+        if (country == "vnd" && tien == "usd") {
+            document.getElementById("rs").innerHTML = (giatri / 23000);
+        }
+    }
 
 
-
-
-    </script>
+</script>
 
 
 </body>
