@@ -8,17 +8,24 @@
 <body>
 <script>
 
-    let a = 10;
-    let b = 20;
-    let c = a*b;
+    let a;
+    let b ;
+    let c ;
+    let m ;
+    let n ;
 
 
-    a = prompt("Enter the width");
-    b = prompt("Enter the height");
-    var a1 = parseInt(a)
-    var b1 = parseInt(b)
-    c = a1*b1
-    document.write("c: " + c);
+    a = prompt("Điểm vật lí");
+    b = prompt("Điểm hóa học");
+    c = prompt("Điểm sinh học");
+
+    m=a+b+c
+    n=(a+b+c)/3
+
+    document.write("Tổng điểm: " + m);
+    document.write('<br/>')
+    document.write("Điểm trung bình: " + n);
+
 </script>
 
 
