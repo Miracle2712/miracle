@@ -5,23 +5,26 @@
     <title>Title</title>
 </head>
 <body>
-<input type="test" id="giatri1">
-<input type="test" id="giatri2">
-<button onclick="gg()">GG</button>
-<h1 id="HS"></h1>
+
 <script>
- let a = document.getElementById("giatri1")
- let b = document.getElementById("giatri2")
+    let userName = prompt("Who's there?", '');
+    let pass = prompt('Password?', '');
 
- function gg() {
-     let c = a.value * a.value
+    if (userName == null ) {
 
-     let d = a.value ** b.value
-     document.getElementById("HS").innerHTML= ("đáp án 1 ="+ c + " " + ", đáp án 1 ="+ d )
+    } else if (userName == "null") {
+        alert('Canceled');
+    } else {
+        alert("I don't know you");
+    }
 
- }
-
-
+    if (pass =="123") {
+        alert('Welcome!');
+    } else if (pass == null) {
+        alert('Canceled.');
+    } else {
+        alert('Wrong password');
+    }
 </script>
 </body>
 </html>
