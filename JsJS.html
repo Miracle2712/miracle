@@ -20,30 +20,25 @@
 <h1 id="HS"></h1>
 
 <script>
- function addition() {
-     let giatri1 = +document.getElementById('giatri1').value;
-     let giatri2 = +document.getElementById('giatri2').value;
-     dapan = giatri1 + giatri2
+    let giatri1 = document.getElementById('giatri1')
+    let giatri2 = document.getElementById('giatri2')
+
+    function addition() {
+        let dapan = +giatri1.value + +giatri2.value
      document.getElementById('HS').innerHTML = dapan
  }
  function Subtraction() {
-     let giatri1 = document.getElementById('giatri1').value;
-     let giatri2 = document.getElementById('giatri2').value;
-     dapan = giatri1 - giatri2
+     let dapan = giatri1.value - giatri2.value
      document.getElementById('HS').innerHTML = dapan
-
  }
+
  function Multiplication() {
-     let giatri1 = document.getElementById('giatri1').value;
-     let giatri2 = document.getElementById('giatri2').value;
-     dapan = giatri1 * giatri2
+     let dapan = giatri1.value * giatri2.value
      document.getElementById('HS').innerHTML = dapan
-
  }
- function Division() {
-     let giatri1 = document.getElementById('giatri1').value;
-     let giatri2 = document.getElementById('giatri2').value;
-     dapan = giatri1 / giatri2
+
+  function  Division() {
+        let dapan = giatri1.value / giatri2.value
      document.getElementById('HS').innerHTML = dapan
 
  }
