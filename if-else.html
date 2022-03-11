@@ -6,18 +6,15 @@
 </head>
 <body>
 <input type="text" id="a">
-<input type="text" id="b">
 <button onclick="ketqua()">Click</button>
 <script>
     function ketqua() {
         let a=document.getElementById("a").value
-        let b=document.getElementById("b").value
-        let c= a % b
 
-        if(c==0)
-            alert("a chia hết cho b")
+        if(a >=16 )
+            alert("Vào lớp 10")
         else
-            alert("a không chia hết cho b")
+            alert("Không đủ điều kiện")
     }
 
 </script>
