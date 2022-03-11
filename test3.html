@@ -4,22 +4,51 @@
     <meta charset="UTF-8">
     <title>Title</title>
 </head>
-<body>
+<body onload="docReady()">
+<img id="nobita" src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Running_animated.gif" style="position:absolute;left:0; top:0;" height="100" width="80"/>
+<input type="button" value="Click Me" onclick="upArrowPressed();" />
+<input type="button" value="Click Me" onclick="downArrowPressed();" />
+<input type="button" value="Click Me" onclick="rightArrowPressed();" />
+<input type="button" value="Click Me" onclick="leftArrowPressed();" />
 
-<input type="test" id="giatri1">
-<button onclick="gg()">GG</button>
-<h1 id="HS"></h1>
 <script>
-    let a = document.getElementById("giatri1")
-
-    function gg() {
-        let b = a.value * 4
-        let c = a.value * a.value
-        document.getElementById("HS").innerHTML= ("chuvi ="+ b + " " + ", dientich ="+ c )
+    function upArrowPressed() {
+        let element = document.getElementById("nobita");
+        element.style.top = parseInt(element.style.top) - 5 + 'px';
+    }
+    function downArrowPressed() {
+        var element = document.getElementById("nobita");
+        element.style.top = parseInt(element.style.top) + 5 + 'px';
+    }
+    function rightArrowPressed() {
+        var element = document.getElementById("nobita");
+        element.style.left = parseInt(element.style.left) + 5 + 'px';
 
     }
+    function leftArrowPressed() {
+        var element = document.getElementById("nobita");
+        element.style.left = parseInt(element.style.left) -  5 + 'px';
 
-
+    }
+    function moveSelection(evt) {
+        switch (evt.keyCode) {
+            case 37:
+                leftArrowPressed();
+                break;
+            case 39:
+                rightArrowPressed();
+                break;
+            case 38:
+                upArrowPressed();
+                break;
+            case 40:
+                downArrowPressed();
+                break;
+        }
+    }
+    function docReady() {
+        window.addEventListener('keydown', moveSelection);
+    }
 
 </script>
 </body>
