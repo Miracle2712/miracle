@@ -5,25 +5,27 @@
     <title>Title</title>
 </head>
 <body>
-<input type="number" id="a">
-<input type="number" id="b">
-<input type="number" id="c">
-<button onclick="sosanh()">So sánh</button>
+<input type="number" id="weight">
+<input type="number" id="height">
+<button onclick="chiso()">Click</button>
 <p id="HS"></p>
 <script>
-function sosanh() {
-    let a=document.getElementById("a").value
-    let b=document.getElementById("b").value
-    let c=document.getElementById("c").value
-     max = a
-    if(max < b){
-        max = b
+    function chiso() {
+        let weight = document.getElementById("weight").value
+        let height = document.getElementById("height").value
+        let BMI = weight / (height * height)
+        console.log(BMI)
+        if (BMI < 18)
+            document.write("gầy");
+        else if (BMI < 25.0)
+            document.write("bình thường ");
+        else if (BMI < 30.0)
+            document.write("béo");
+        else
+            document.write("thừa cân");
+
+        document.getElementById("HS").innerHTML = "chỉ số =" + BMI
     }
-    if(max < c){
-        max = c
-    }
-    document.getElementById("HS").innerHTML='max la'+max ;
-}
 
 
 </script>
