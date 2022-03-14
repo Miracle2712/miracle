@@ -6,16 +6,20 @@
 </head>
 <body>
 <script>
-    let A;
-    A = "<table border='1' width='300' cellspacing='0' cellpadding='3'>"
-    for (i = 1; i <= 10; i++) {
+    let A, i, j;
+    A = "<table border='1' width='300' >";
+    i = 2 ; j = 1;
+    while (i <= 9) {
         A = A + "<tr>";
-        for (j = 1; j <= 10; j++) {
-            A = A + "<td>" + i * j + "</td>";
+        while (j <= 9) {
+            A = A + "<td>" + i +"x" +j +"=" + (i*j) +"</td>";
+            j++;
         }
         A = A + "</tr>";
+        j = 1;
+        i++;
     }
-        A = A + "</table>";
+    A = A + "</table>";
     document.write(A);
 </script>
 </body>
