@@ -6,13 +6,13 @@
 </head>
 <body>
 <script>
-    let A = prompt("nhập số ");
-    let B = 0
-    while( A != -1 ) {
-        A = prompt("nhập số ");
-        alert(A);
-        B = B + A
-    }
+    let A = null ;
+    do {
+        A = prompt("Nhập vào số từ 1 -> 10");
+    } while (A < 1 || A > 10);
+     alert("số bạn đã nhập"+ A)
+
+
 </script>
 </body>
 </html>
