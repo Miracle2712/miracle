@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let dem = 0
+    for (let j=2 ; dem < 20 ; j++){
+        let check = "snt"
+        for (let i = 2 ; i < j ; i++){
+            if (j%i == 0){
+                check = "ksnt"
+            }
+        }
+        if (check == "snt"){
+            document.write(j+"<br>")
+            dem++;
+        }
+    }
+
+</script>
+</body>
+</html>
