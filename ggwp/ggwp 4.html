@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <h1>Nhập đi</h1>
+    <textarea cols="58" rows="28" id="HS" onkeyup="typing()"></textarea>
+</center>
+<script>
+    let a = "trời ơi";
+    let b = document.getElementsByTagNameNS("HS");
+    let i = 0;
+    let c = ''
+    function typing() {
+       c += a(i);
+       i++;
+       if (i>=a.length){
+           c = '';
+           i = 0;
+       }
+       b.value = c;
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="Play()">Chơi</button>
+<script>
+    function Play() {
+        let S = true;
+        let a = prompt("nhập sô đầu");
+        let b = prompt("nhập số cuối");
+        let c = b - a;
+        let rd = parseInt(Math.random() * c) + 1;
+        let count = 1;
+        while (S === true || count <=3) {
+            let u = prompt("nhập số bạn đoán")
+            if (u >= a || u <= b) {
+                if (u == rd) {
+                    alert("bạn thắng");
+                    S = false;
+                } else {
+                    alert("số đó không đúng")
+                }
+            } else {
+                alert("bạn nhập không đúng trong khoảng")
+            }
+            count++;
+        }
+              if(count>3){
+                  alert("end game")
+              }
+    }
+
+
+</script>
+
+</body>
+</html>
