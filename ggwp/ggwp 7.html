@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a1 = 1
+    let a2 = 1
+    let a = 0
+    let dem = 0
+    for(;dem <= 18;dem++) {
+        a = a1 + a2;
+        a1 = a2;
+        a2 = a;
+        if(a%5==0){
+            break;
+        }
+    }
+    document.write(a)
+</script>
+</body>
+</html>
