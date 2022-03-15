@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p><b>DO YOU LOVE ME ?</b></p>
+<button onclick="yeu()">yes </button>
+<button style="position:absolute; left:70px; top:51px " onmouseover="dichuyen()" id="HS">no</button>
+
+<script>
+
+    let HS = document.getElementById("HS")
+
+    function dichuyen() {
+        HS.style.left= Math.random() * 1000 + "px"
+        HS.style.top= Math.random() * 400 + "px"
+    }
+
+    function yeu() {
+        alert("non lắm")
+
+    }
+
+
+</script>
+
+</body>
+</html>
