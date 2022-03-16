@@ -5,26 +5,20 @@
     <title>Title</title>
 </head>
 <body>
-<p><b>DO YOU LOVE ME ?</b></p>
-<button onclick="yeu()">yes </button>
-<button style="position:absolute; left:70px; top:51px " onmouseover="dichuyen()" id="HS">no</button>
 
 <script>
+    let x = [1,2,4,5,7,8,12];
+    for (let i=0 ; i<x.length ; i++) {
+       if (i%2 ===0){
+           document.write(x[i]+"<br>");
+       }
+                }
 
-    let HS = document.getElementById("HS")
 
-    function dichuyen() {
-        HS.style.left= Math.random() * 1000 + "px"
-        HS.style.top= Math.random() * 400 + "px"
-    }
 
-    function yeu() {
-        alert("non lắm")
 
-    }
 
 
 </script>
-
 </body>
 </html>
