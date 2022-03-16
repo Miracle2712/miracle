@@ -5,6 +5,20 @@
     <title>Title</title>
 </head>
 <body>
+<script>
+    let arr = [];
+    for (let i = 0; i < 10; i++) {
+        let a = +prompt("Nhập số")
+        arr.push(a);
+    }
+    let max = arr[0];
+    for (let i = 1; i < 10; i++) {
+        if (arr[i] > max) {
+            max = arr[i]
+        }
+    }
+    alert("Số lớn nhất: " + max + " ở phần tử: " + (arr.indexOf(max) + 1))
 
+</script>
 </body>
 </html>
