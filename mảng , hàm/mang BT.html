@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [1,2,4,8,10,1];
+    let text = ""
+    for(let i=0; i<arr.length ; i++){
+        text += arr[i]+ " "
+    } document.write("các phần tử "+text + "<br>")
+    text=" "
+    for(let i=0; i<arr.length ; i++){
+        if(arr[i]%2===0){
+            text += arr[i]+ " "
+        }
+
+
+
+    } document.write("các phần tử chẵn "+text+"<br>")
+
+    let total = 0 ;
+    for(let i=0; i<arr.length ; i++){
+           total +=arr[i]
+    } document.write("tổng các phần tủ "+total+"<br>")
+
+
+
+
+
+    let s = 1;
+    for(let i=0; i<arr.length ; i++){
+        if(arr[i]%2===0){
+           s *=arr[i];
+        }
+    } document.write("tích các phần tử chẵn "+s+"<br>")
+
+
+
+
+    let max = arr[0]
+    for(let i=0; i<arr.length ; i++){
+        if(arr[i]>max){
+            max = arr[i];
+        }
+    } document.write("giá trị lớn nhất "+max+"<br>")
+
+
+
+
+
+   let x = +prompt("nhập đi");
+    document.write("vị trí của x trong mảng(-1 là không có ) "+arr.indexOf(x) + "<br>")
+    let count = 0;
+    for(let i=0; i<arr.length ; i++){
+        if(arr[i] === x){
+            count += 1;
+        }
+    } document.write("số lượng x trong mảng  "+ count +"<br>")
+
+
+
+
+</script>
+</body>
+</html>
