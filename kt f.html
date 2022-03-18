@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [
+        [2,3,4,6],
+        [5,8,9,10]
+    ]
+    let x = "Phần tử có giá trị lớn nhất các hàng là: <br>"
+    for (let i = 0; i < arr.length; i++) {
+        let max1 = arr[i][0];
+        for (let j = 0; j < arr[i].length; j++) {
+            if (arr[i][j] > max1) {
+                max1 = arr[i][j]
+            }
+        }
+        x += max1 + "<br>";
+    }
+    document.write(x);
+</script>
+</body>
+</html>
