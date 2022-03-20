@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = ['Polaris', 'Aldebaran', 'Deneb', 'Vega', 'Altair', 'Dubhe', 'Regulus'];
+    let b = ['Ursa Minor', 'Tarurus', 'Cygnus', 'Lyra', 'Aquila', 'Ursa Major', 'Leo'];
+    let ip = prompt("Nhập đầu vào: ");
+
+    function checkStar(ip) {
+        if (a.indexOf(ip) === -1) {
+            return text = "không tìm thấy"
+        }
+        else {
+            return b[a.indexOf(ip)]
+        }
+    }
+
+    alert(checkStar(ip))
+</script>
+</body>
+</html>

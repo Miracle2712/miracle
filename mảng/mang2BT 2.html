@@ -6,13 +6,13 @@
 </head>
 <body>
 <script>
-    let arr = [];
-    for (let i = 0; i < 5; i++) {
-        let a = prompt("N10hập số")
-        arr.push(a);
+    let a = prompt("Nhập chuỗi số: ");
+    function change(a) {
+        let c = a.split(",");
+        c.reverse();
+        alert(c);
     }
-    let c=arr.reverse().join("")
-    document.write(c);
+    change(a)
 
 
 </script>
