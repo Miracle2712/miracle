@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập ký tự")
+    console.log(isNaN(a))
+
+    function checkNumber(ip) {
+        if (a > 0) {
+            return true;
+        }
+        else if (a < 0) {
+            return false;
+        }
+        else {
+            return "error"
+        }
+    }
+    alert(checkNumber(a));
+</script>
+</body>
+</html>
