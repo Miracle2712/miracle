@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let So = [1,5,7,9,5,24];
+    let x = +prompt('Mời nhập 1 giá trị');
+    let count = 0
+    function Tim(x) {
+        for (let i=0;i<So.length;i++) {
+            if (x === So[i]) {
+                count = count+1;
+                alert(So[i] + "tại vị trí" + i)
+            }
+        }
+        if (count === 0) {
+            alert("không có trong mảng")
+        }
+    }
+    Tim(x)
+
+</script>
+</body>
+</html>
